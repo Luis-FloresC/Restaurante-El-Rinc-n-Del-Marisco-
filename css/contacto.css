@@ -42,7 +42,7 @@ section{
         rgba(245, 246, 252, 0.123),
         rgba(19, 111, 117, 0.445)
       ),
-      url(/imagenes/order-img.jpg);
+      url(./imagenes/order-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100%;

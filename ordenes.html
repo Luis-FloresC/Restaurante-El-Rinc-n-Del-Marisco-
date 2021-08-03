@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/stylecarrito.css">
+    <link rel="stylesheet" href="./css/stylecarrito.css">
     <title>Ordenes</title>
 </head>
 
@@ -179,7 +179,7 @@
         <script>var contenido = document.querySelector('#dat')
         //script que rellena con los datos de datas.json los div que se generan en cuerpo del html
             function traer() {
-                fetch('Archivos JSON/datas.json')
+                fetch('./Archivos JSON/datas.json')
                     .then(res => res.json())
                     .then(datos => {
                         // console.log(datos)
