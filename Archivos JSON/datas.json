@@ -1,0 +1,33 @@
+ [
+     {
+         "nombre":"Camaronesconcoco",
+         "precio": 9.99,
+         "imagen": "imagenes/Camarones-con-coco-y-almendras.jpg"
+     },
+     {
+         "nombre": "Cocteldecamaron",
+         "precio": 9.99,
+         "imagen": "imagenes/cocteldecamaron.jpg"
+     },
+     {
+         "nombre": "Cocteldemariscos",
+         "precio": 9.99,
+         "imagen": "imagenes/cocteldemariscos.jpg"
+     },
+     {
+         "nombre": "Ensaladaconlangosta",
+         "precio": 19.99,
+         "imagen": "imagenes/ensalada-langosta.jpg"
+     },
+     {
+         "nombre": "Caviar",
+         "precio": 19.99,
+         "imagen": "imagenes/g7.jpg"
+    },
+    {
+        "nombre": "Jugos",
+        "precio": 9.99,
+        "imagen": "imagenes/g9.jpg"
+    }
+]
+

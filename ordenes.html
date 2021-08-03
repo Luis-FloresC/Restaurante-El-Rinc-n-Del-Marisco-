@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/stylecarrito.css">
+    <title>Ordenes</title>
+</head>
+
+
+<body>
+    <header>
+        <a href="#" class="logo" style="text-decoration:none"><i class="fas fa-utensils"></i>Restaurant</a>
+    
+        <div id="menu" class="fas fa-bars"></div>
+
+ <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="historia.html">Historia</a>
+    <a href="ordenes.html">ordenes</a>
+    <a href="#gallery">Reservaciones</a>
+    <a href="#review">Usuarios</a>
+    <a href="Contacto.html">Contacto</a>
+ </nav>
+
+</header>
+    <section class="store">
+        <div class="container">
+            <div class="items">
+                <div class="row" id="dat">
+        
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+                
+            </div>
+           
+    
+          
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0$</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" id="buttonadd" type="button" >Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+    </section>
+    
+    <div class="overlay" id="overlay">
+                <link rel="shortcut icon" href="img/logo.png">
+                
+                <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    
+                </svg>
+            </div>
+                <div class="popup" id="popup">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h3>Pago</h3>
+                    <form action="" id = "formulario">
+                        <div class="contenedor-inputs">
+                            <input type="num" placeholder="Numero de tarjeta"id="numero" maxlength="16" pattern="[0-9]+" onkeypress="return valideKey(event);">
+                            <input type="num" placeholder="CVV" id="cvv" onkeypress="return valideKey(event);">
+                            <input type="text" placeholder="Titular de la tarjeta" id="nombre" onkeypress="return valideKeyletter(event);">
+                            <input type="text" placeholder="Direccion" id="direccion"onkeypress="return valideKeyletter(event);">
+                        </div> <br><br><br><br><br>
+                        <input type="submit" class="btn-submit" value="Comprar">
+                </div>
+            </div> 
+            
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="btn">Facebook</a>
+            <a href="#" class="btn">Instagram</a>
+            <a href="#" class="btn">Twitter</a>   
+        </div>
+    
+        <h1 class="credit">Creado por el <span>grupo de diseñadores web</span> todos los derechos reservados</h1>
+    
+    </section>
+        <script>
+            //llama a los input por medio de su ID
+            const $formulario = document.querySelector("#formulario"),
+            $numero = document.querySelector("#numero"),
+            $cvv = document.querySelector("#cvv"),
+            $nombre = document.querySelector("#nombre"),
+            $direccion = document.querySelector("#direccion");
+            $formulario.onsubmit = evento =>{
+                evento.preventDefault();
+                const numero = $numero.value,
+                cvv = $cvv.value,
+                nombre = $nombre.value,
+                direccion = $direccion.value;
+                //validacion de los 16 numeros de una tarjeta
+                //No permite valores distintos a 16
+                if(numero.length !=16){
+                    //si es diferente a 16 dira que es muy corto y pondra un cuadro rojo en donde esta el problema
+                    alert("El valor no es el numero de una tarjeta de debito, es muy corto");
+                    document.getElementById("numero").focus();
+                    document.getElementById("numero").style.borderColor="red";
+                    return;
+                }
+                if(cvv.length !=3){
+                    alert("El valor no es el codigo de seguridad es muy corto");
+                    document.getElementById("cvv").focus();
+                    document.getElementById("cvv").style.borderColor="red";
+                    return;
+                }
+                //validacion para el titular de la tarjeta
+                //No permite mas de 35 letras en el nombre
+                if (nombre.length >= 35) 
+                {
+                    alert("Sólo se permiten de 35 letras para el nombre")
+                    return;
+                }else if (/^\s+$/.test(nombre)) {
+                document.getElementById("nombre").focus();
+                document.getElementById("nombre").style.borderColor="green";
+                return;
+                }else if (/^([0-9])*$/.test(nombre))
+                {
+                //si hay un valor que no es una letra retorna y marca en rojo en donde esta el problema
+                alert("El valor no es una letra");
+                document.getElementById("nombre").focus();
+                document.getElementById("nombre").style.borderColor="red";
+                return; 
+                }
+
+                $formulario.submit();
+            };
+        </script>
+        
+        <script>var contenido = document.querySelector('#dat')
+        //script que rellena con los datos de datas.json los div que se generan en cuerpo del html
+            function traer() {
+                fetch('Archivos JSON/datas.json')
+                    .then(res => res.json())
+                    .then(datos => {
+                        // console.log(datos)
+                        tabla(datos)
+                    })
+            }
+            //prueba
+            function tabla(datos) {
+                // console.log(datos)
+                contenido.innerHTML = ''
+                for(let valor of datos){
+                    // console.log(valor.nombre)
+                    contenido.innerHTML += `
+                    <div class="col-12 col-md-6">
+                            <div class="item shadow mb-4">
+                            <h3 class="item-title">${valor.nombre}</h3>
+                            <img class="item-image" src="${valor.imagen}">
+                            <div class="item-details">
+                                <h4 class="item-price">${valor.precio}$</h4>
+                                <button class="item-button btn btn-primary addToCart"  onclick="Sumar();">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    `
+                }
+            }
+            window.onload = traer();</script>
+            <script src="./Archivos JSON/datas.json"></script>
+            
+            <script type="text/javascript">
+            //cogigo utilizado para ejecutar el script tienda.js hasta que la pagina haya terminado de cargar en su totalidad
+                function downloadJSAtOnload() {
+                var element = document.createElement("script");
+                element.src = "./js/tienda.js";
+                document.body.appendChild(element);
+                }
+                if (window.addEventListener)
+                window.addEventListener("load", downloadJSAtOnload, false);
+                else if (window.attachEvent)
+                window.attachEvent("onload", downloadJSAtOnload);
+                else window.onload = downloadJSAtOnload;
+                </script>
+                <script type="text/javascript">
+                    //cogigo utilizado para ejecutar el script tienda.js hasta que la pagina haya terminado de cargar en su totalidad
+                        function downloadJSAtOnload() {
+                        var element = document.createElement("script");
+                        element.src = "rows.js";
+                        document.body.appendChild(element);
+                        }
+                        if (window.addEventListener)
+                        window.addEventListener("load", downloadJSAtOnload, false);
+                        else if (window.attachEvent)
+                        window.attachEvent("onload", downloadJSAtOnload);
+                        else window.onload = downloadJSAtOnload;
+                        </script>
+                
+                <script type="text/javascript">
+                //para validar que solo hay numeros en las entradas del numero de tarjeta
+                    function valideKey(evt){
+                        
+                        // code is the decimal ASCII representation of the pressed key.
+                        var code = (evt.which) ? evt.which : evt.keyCode;
+                        
+                        if(code==8) { // backspace.
+                          return true;
+                        } else if(code>=48 && code<=57) { // is a number.
+                          return true;
+                        } else{ // other keys.
+                          return false;
+                        }
+                    }
+                    </script> 
+
+                
+                <script type="text/javascript">
+                //para validar que solo se ingresen solo letras
+                    function valideKeyletter(evt){
+                        
+                        // code is the decimal ASCII representation of the pressed key.
+                        var code = (evt.which) ? evt.which : evt.keyCode;
+                        
+                        if(code==8) { // backspace.
+                          return true;
+                        }else if(code=32) {
+                          return true;
+                        }else if(code>=65 && code<=90) {
+                          return true;
+                        }else if(code>=97 && code<=122) {
+                          return true;
+                        } else{ // other keys.
+                          return false;
+                        }
+                    }
+                    </script> 
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+[
+    {
+        "nombre":"Tasty Shrimps",
+        "precio": "$15 - $30",
+        "imagen": "imagenes/p1.jpg"
+    },
+    {
+        "nombre":"Tasty Shrimps",
+        "precio": "$15 - $30",
+        "imagen": "imagenes/p2.jpg"
+    },
+    {
+        "nombre":"Tasty Shrimps",
+        "precio": "$15 - $30",
+        "imagen": "imagenes/p3.jpg"
+    },
+    {
+        "nombre":"Tasty Shrimps",
+        "precio": "$15 - $30",
+        "imagen": "imagenes/p4.jpg"
+    },
+    {
+        "nombre":"Tasty Shrimps",
+        "precio": "$15 - $30",
+        "imagen": "imagenes/p-5.jpg"
+    },
+    {
+        "nombre":"Tasty Martini",
+        "precio": "$15 - $30",
+        "imagen": "imagenes/p6.jpg"
+    },
+    {
+        "nombre":"Tasty Martini",
+        "precio": "$15 - $30",
+        "imagen": "imagenes/p7.jpg"
+    },
+    {
+        "nombre":"Tasty Martini",
+        "precio": "$15 - $30",
+        "imagen": "imagenes/p8.jpg"
+    }
+]
+

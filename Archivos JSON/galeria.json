@@ -1,0 +1,50 @@
+[
+    {
+        "nombre":"Deliciosos Platos",
+        "texto":"Esta sopa es un platillo delicioso que consiste en cocinar verduras, camarones y hecho con chiles.",
+        "imagen": "imagenes/g1.jpg"
+    },
+    {
+
+      
+        "nombre":"Deliciosos Platos",
+        "texto": "Una sopa deliciosa de camarones es una receta que no debe faltar en ningún recetario.",
+        "imagen": "imagenes/g2.jpg"
+    },
+    {
+        "nombre":"Jugos Naturales",
+        "texto": "El jugo es una alternativa excelente para disfrutar de todo el sabor de estas frutas.",
+        "imagen": "imagenes/g11.jpg"
+    },
+    {
+        "nombre":"Deliciosos Platos",
+        "texto": "Una sopa deliciosa de camarones es una receta que no debe faltar en ningún recetario.",
+        "imagen": "imagenes/g4.jpg"
+    },
+    {
+        "nombre":"Deliciosos Platos",
+        "texto":"Si desea probar algo único que no encontrarás en ningun otro restaurante, entonces prueba nuestra receta.",
+        "imagen": "imagenes/g5.jpg"
+    },
+    {
+        "nombre":"Deliciosos Platos",
+        "texto": "El caviar está considerado mundialmente como un manjar refinado y codiciado por los gourmets,",
+        "imagen": "imagenes/g7.jpg"
+    },
+    {
+        "nombre":"Jugos Naturales",
+        "texto": "El jugo es una alternativa excelente para disfrutar de todo el sabor de estas frutas.",
+        "imagen": "imagenes/g9.jpg"
+    },
+    {
+        "nombre":"Jugos Naturales",
+        "texto": "El jugo es una alternativa excelente para disfrutar de todo el sabor de estas frutas.",
+        "imagen": "imagenes/g11.jpg"
+    },
+    {
+        "nombre":"Jugos Naturales",
+        "texto": "El jugo es una alternativa excelente para disfrutar de todo el sabor de estas frutas.",
+        "imagen": "imagenes/g10.jpg"
+    }
+]
+
