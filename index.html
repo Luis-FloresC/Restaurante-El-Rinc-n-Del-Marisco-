@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
@@ -209,7 +209,7 @@
         var contenido = document.querySelector('#rowss')
         //script que rellena con los datos de indeex.json dentro de una variable denominada datos
         function traer() {
-            fetch('Archivos JSON/indeex.json')
+            fetch('./Archivos JSON/indeex.json')
                 .then(res => res.json())
                 .then(datos => {
                     // console.log(datos)
@@ -243,7 +243,7 @@
             var contenidoo = document.querySelector('#popularr')
             //funcion que selecciona los datos de platosmaspopulares.json y los guarda en un una variable
             function traera() {
-                fetch('Archivos JSON/platosmaspopulares.json')
+                fetch('./Archivos JSON/platosmaspopulares.json')
                     .then(ress => ress.json())
                     .then(datoss => {
                         // console.log(datos)
@@ -284,7 +284,7 @@
     var contenidooo = document.querySelector('#galeriaa')
     //funcion que selecciona los datos de galeria.json y los guarda en un una variable
     function traeraa() {
-        fetch('Archivos JSON/galeria.json')
+        fetch('./Archivos JSON/galeria.json')
             .then(resss => resss.json())
             .then(datosss => {
                 // console.log(datos)
@@ -313,8 +313,8 @@
     //cuando se cargue la pagina se ejecutara la funcion traera, a consecuencia de eso se mostrara la seccion de platos mas populares
     window.onload = traeraa();
 </script>
-            <script src="/Archivos JSON/platosmaspopulares.json"></script>
-            <script src="/js/js.js"></script>
+            <script src="./Archivos JSON/platosmaspopulares.json"></script>
+            <script src="./js/js.js"></script>
             
            
     
