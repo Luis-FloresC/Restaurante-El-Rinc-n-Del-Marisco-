@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body background="./imagenes/table_b&w.jpg">
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Restaurant</a>
+        <div id="menu" class="fas fa-bars"></div>
+ <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="historia.html">Historia</a>
+    <a href="ordenes.html">ordenes</a>
+    <a href="reservacion.html">Reservaciones</a>
+    <a href="login.html">Usuarios</a>
+    <a href="Contacto.html">Contacto</a>
+ </nav>
+</header>
+
+
+<form method="POST" id="formReserva">
+    <section class = "banner">
+        <h2>Reserve una Mesa Ahora</h2>
+        <div class = "card-container">
+            <div class = "card-img">
+                
+            </div>
+
+            <div class = "card-content">
+                <h3>Reservacion</h3>
+                <form>
+                    <div class = "form-row">
+                        <select name = "dia">
+                            <option value = "seleccion-dia">Selecccione Dia</option>
+                            <option value = "lunes">Lunes</option>
+                            <option value = "martes">Martes</option>
+                            <option value = "miercoles">Miercoles</option>
+                            <option value = "jueves">Jueves</option>
+                            <option value = "viernes">Viernes</option>
+                            <option value = "sabado">Sabado</option>
+                        </select>
+
+                        <select name = "hora">
+                            <option value = "hora-seleccion">Seleccione Hora</option>
+                            <option value = "10">10: 00</option>
+                            <option value = "10">12: 00</option>
+                            <option value = "10">14: 00</option>
+                            <option value = "10">16: 00</option>
+                            <option value = "10">18: 00</option>
+                            <option value = "10">20: 00</option>
+                            <option value = "10">22: 00</option>
+                        </select>
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "text" name="txtNombre" id="txtNombre" placeholder="Nombre "required>
+                        <div id="txtNombreErr" class="error"></div>
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "tel" name="txtTelefono" id="txtTelefono" placeholder="Numero de Telefono" required>
+                        <div id="txtTelefonoErr" class="error"></div>
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "number" placeholder="Cantidad de Personas" min = "1">
+                        <input type = "submit" value = "Reservar">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="btn">Facebook</a>
+        <a href="#" class="btn">Instagram</a>
+        <a href="#" class="btn">Twitter</a>   
+    </div>
+
+    <h1 class="credit">Creado por el <span>grupo de diseñadores web</span> todos los derechos reservados</h1>
+
+</section>
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<div class="loader-container">
+    <img src="imagenes/0_4Gzjgh9Y7Gu8KEtZ.gif" alt="">
+</div>
+        
+<script src="./js/js.js"></script>
+<script src="./js/reservacion.js"></script>
+            
+           
+    
+</body>
+</html>

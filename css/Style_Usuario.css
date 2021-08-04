@@ -1,0 +1,189 @@
+main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #e6e4e4;
+    padding: 2.5em 0;
+    line-height: 1.5; 
+}
+
+main section {
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-radius: 10px; 
+    width: 80%;
+    height: 600px;
+}
+
+main section h2 {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+    background-image: linear-gradient(150deg,  #012F3A,  #03AED4);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+main section .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+.error{
+    padding: 8px;
+    color:#bb0000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+main section .grupo input, main section .grupo textarea {
+    background: none;
+    color: #a3a3a3;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px; 
+    display: block;
+    width: 100%; 
+    border: none; 
+    border-bottom: 2px solid #a3a3a3; 
+}
+
+main section .grupo input:focus, main section .grupo textarea:focus {
+    outline: none;
+    color: #a3a3a3; 
+}
+
+main section .grupo input:focus~label,
+main section .grupo input:valid~label,
+main section .grupo textarea:focus~label,
+main section .grupo textarea:valid~label {
+    position: absolute;
+    top: -14px;
+    font-size: 12px; 
+    color: #0286A4;
+}
+
+main section .grupo label {
+    color: #a3a3a3;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+main section .grupo input:focus~.barra, main section .grupo textarea:focus~.barra {
+    width: 100%;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.combobox{
+    display: flex;
+    margin-left: 50px;
+    color: #a3a3a3;
+    font-size: 17px;
+}
+
+.cmb{
+    margin-left: 1em;
+}
+
+.combobox select, option{
+    color: #a3a3a3;
+    border-color: #5f5f5f;
+    font-size: 17px;
+}
+
+button {
+    background-color: #035202;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    margin-top: 70px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+button:hover{
+    background-color: #147B01;
+    transition: background-color 0.5s ease;
+}
+
+
+
+#scroll-top{
+    position: fixed;
+    top:-120%;
+    right: 2rem;
+    padding: .5rem 1.5rem;
+    font-size: 4rem;
+    background: var(--blue);
+    color: #fff;
+    border-radius: .5rem;
+    transition: 1s linear;
+    z-index: 1000;
+
+}
+
+#scroll-top.active{
+
+    top: calc(100% - 12rem);
+}
+
+.loader-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background:#fff ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.loader-container.fade-out{
+    top:-120%; 
+
+}
+
+@media screen and (min-width:300px) and (max-width: 500px){
+    
+    main section {
+        height: 620px;
+    }
+    
+    .combobox{
+        font-size: 16px;
+    }
+    
+    .cmb{
+        margin-right: 2em;
+    }
+
+    .combobox select, option{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width: 1200px){
+    main{
+        height: 85vh;
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_login.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Restaurant</a>
+        <div id="menu" class="fas fa-bars"></div>
+ <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="historia.html">Historia</a>
+    <a href="ordenes.html">ordenes</a>
+    <a href="reservacion.html">Reservaciones</a>
+    <a href="login.html">Usuarios</a>
+    <a href="Contacto.html">Contacto</a>
+ </nav>
+</header>
+
+
+<main>
+
+    <div class="contenedor__todo">
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <h3>¿Ya tienes una cuenta?</h3>
+                <p>Inicia sesión para entrar en la página</p>
+                <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+            </div>
+            <div class="caja__trasera-register">
+                <h3>¿Aún no tienes una cuenta?</h3>
+                <p>Regístrate para que puedas iniciar sesión</p>
+                <button id="btn__registrarse">Regístrarse</button>
+            </div>
+        </div>
+
+        <!--Formulario de Login y registro-->
+        <div class="contenedor__login-register">
+            <!--Login-->
+            <form action="" class="formulario__login">
+                <h2>Iniciar Sesión</h2>
+                <input type="text" id="user" placeholder="Correo Electronico">
+                <input type="password" id="contra" placeholder="Contraseña">
+                <button onclick="IniciarSesion()">Entrar</button>
+            </form>
+
+            
+        </div>
+    </div>
+
+</main>
+
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="btn">Facebook</a>
+        <a href="#" class="btn">Instagram</a>
+        <a href="#" class="btn">Twitter</a>   
+    </div>
+
+    <h1 class="credit">Creado por el <span>grupo de diseñadores web</span> todos los derechos reservados</h1>
+
+</section>
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<div class="loader-container">
+    <img src="imagenes/0_4Gzjgh9Y7Gu8KEtZ.gif" alt="">
+</div>
+        
+<script src="./js/js.js"></script>
+<script src="./js/login.js"></script>
+            
+           
+    
+</body>
+</html>

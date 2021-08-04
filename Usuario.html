@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Style_Usuario.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Restaurant</a>
+        <div id="menu" class="fas fa-bars"></div>
+ <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="historia.html">Historia</a>
+    <a href="ordenes.html">ordenes</a>
+    <a href="reservacion.html">Reservaciones</a>
+    <a href="login.html">Usuarios</a>
+    <a href="Contacto.html">Contacto</a>
+ </nav>
+</header>
+
+
+<main>
+    <section>
+            <h2>Usuario</h2>
+            <div class="grupo">
+                <input type="text" name="txtNombreUsuario" id="txtNombreUsuario" required><span class="barra"></span>
+                <label>Nombre del Usuario*</label>
+                <div id="txtNombreUsuarioErr" class="error"></div>
+            </div>
+
+            <div class="grupo">
+                <input type="text" name="txtCorreo" id="txtCorreo" required><span class="barra"></span>
+                <label>Correo Electrónico*</label>
+                <div id="txtCorreoErr" class="error"></div>
+            </div>
+
+            <div class="grupo">
+                <input type="password" name="txtContrasenia" id="txtContrasenia" required><span class="barra"></span>
+                <label>Contraseña*</label>
+                <div id="txtContraseniaErr" class="error"></div>
+            </div>
+            
+            <button type="submit" onclick="saveAsJson()">Ingresar Usuario</button>
+    </section>
+</main>
+
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="btn">Facebook</a>
+        <a href="#" class="btn">Instagram</a>
+        <a href="#" class="btn">Twitter</a>   
+    </div>
+
+    <h1 class="credit">Creado por el <span>grupo de diseñadores web</span> todos los derechos reservados</h1>
+
+</section>
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<div class="loader-container">
+    <img src="imagenes/0_4Gzjgh9Y7Gu8KEtZ.gif" alt="">
+</div>
+        
+<script src="./js/js.js"></script>
+<script src="./js/usuario.js"></script>
+            
+           
+    
+</body>
+</html>
